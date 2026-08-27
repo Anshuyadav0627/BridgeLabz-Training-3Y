@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Plans</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .plans {
+            display: flex;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .plan {
+            flex: 1;
+            padding: 25px;
+            border: 2px solid #aaa;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 3px 8px gray;
+            transition: 0.3s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            background-color: #e3f2fd;
+        }
+
+        .popular {
+            border: 3px solid blue;
+        }
+
+        .plan li {
+            margin: 12px;
+        }
+
+        .plan a {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .plans {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Pricing Plans</h1>
+
+    <div class="plans">
+
+        <div class="plan">
+            <h2>Basic</h2>
+            <h3>₹499 / Month</h3>
+
+            <ul>
+                <li>5 Projects</li>
+                <li>10 GB Storage</li>
+                <li>Email Support</li>
+            </ul>
+
+            <a href="#">Choose Plan</a>
+        </div>
+
+        <div class="plan popular">
+            <h2>Standard</h2>
+            <h3>₹999 / Month</h3>
+
+            <ul>
+                <li>15 Projects</li>
+                <li>50 GB Storage</li>
+                <li>Priority Support</li>
+            </ul>
+
+            <a href="#">Choose Plan</a>
+        </div>
+
+        <div class="plan">
+            <h2>Premium</h2>
+            <h3>₹1499 / Month</h3>
+
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>100 GB Storage</li>
+                <li>24/7 Support</li>
+            </ul>
+
+            <a href="#">Choose Plan</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
