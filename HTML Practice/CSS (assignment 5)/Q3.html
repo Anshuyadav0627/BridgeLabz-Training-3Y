@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Team</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .team {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 25px;
+            margin: 10px;
+            background-color: white;
+            border: 2px solid #555;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px gray;
+        }
+
+        .leader {
+            background-color: #dbeafe;
+            border: 3px dashed blue;
+        }
+
+        @media (max-width: 600px) {
+            .team {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Team Members</h1>
+
+    <div class="team">
+
+        <div class="card">
+            <h2>Anshu Yadav</h2>
+            <h3>Developer</h3>
+            <p>
+                I work on programming and software development projects.
+            </p>
+        </div>
+
+        <div class="card leader">
+            <h2>Rahul Sharma</h2>
+            <h3>Team Lead</h3>
+            <p>
+                He manages the team and guides members during projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Priya Singh</h2>
+            <h3>Designer</h3>
+            <p>
+                She works on website design and user experience.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
