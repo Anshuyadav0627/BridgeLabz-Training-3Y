@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .page {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #1e3a5f;
+            color: white;
+            padding: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: white;
+            padding: 20px;
+        }
+
+        aside li {
+            margin: 15px;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        article {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .page {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header>
+            <h1>Anshu's Blog</h1>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Blogs</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
+
+        <aside>
+            <h2>Categories</h2>
+            <ul>
+                <li>Technology</li>
+                <li>Programming</li>
+                <li>Cybersecurity</li>
+                <li>AI</li>
+            </ul>
+        </aside>
+
+        <main>
+
+            <article>
+                <h2>Learning Java</h2>
+                <p>
+                    Java is a popular programming language. I am learning
+                    Java for solving DSA problems.
+                </p>
+            </article>
+
+            <article>
+                <h2>My Coding Journey</h2>
+                <p>
+                    Coding helps me improve my logical thinking and
+                    problem-solving skills.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Email: anshu@example.com</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
