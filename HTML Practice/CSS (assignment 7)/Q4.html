@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shadows and Depth</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            text-shadow: 3px 3px 5px gray;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.4s ease;
+        }
+
+        .card1 {
+            box-shadow: 5px 5px 10px gray;
+        }
+
+        .card2 {
+            box-shadow: 0 0 15px gray;
+        }
+
+        .card3 {
+            box-shadow: 0 10px 20px gray;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Shadows and Depth Effects</h1>
+
+    <main class="container">
+
+        <article class="card card1">
+            <h2>Profile One</h2>
+            <p>Web Developer</p>
+            <p>Creative and hardworking student.</p>
+        </article>
+
+        <article class="card card2">
+            <h2>Profile Two</h2>
+            <p>Designer</p>
+            <p>Interested in modern web design.</p>
+        </article>
+
+        <article class="card card3">
+            <h2>Profile Three</h2>
+            <p>Programmer</p>
+            <p>Loves coding and problem solving.</p>
+        </article>
+
+    </main>
+
+</body>
+</html>

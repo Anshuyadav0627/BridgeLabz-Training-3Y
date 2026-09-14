@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Height and Width Practice</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 150px;
+            background-color: #3498db;
+        }
+
+        .box2 {
+            width: 30%;
+            min-height: 200px;
+            max-width: 300px;
+            background-color: #27ae60;
+        }
+
+        .box3 {
+            width: 15em;
+            height: 30vh;
+            max-width: 250px;
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Height and Width Practice</h1>
+
+    <main class="container">
+
+        <div class="box box1">
+            200px × 150px
+        </div>
+
+        <div class="box box2">
+            30% Width<br>
+            Min Height: 200px
+        </div>
+
+        <div class="box box3">
+            15em Width<br>
+            30vh Height
+        </div>
+
+    </main>
+
+</body>
+</html>
