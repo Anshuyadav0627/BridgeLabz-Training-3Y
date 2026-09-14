@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Classes</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .example {
+            background-color: white;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* :hover changes style when mouse is over the element */
+        a:hover {
+            color: red;
+        }
+
+        /* :focus changes style when input gets focus */
+        input:focus {
+            border: 3px solid blue;
+            outline: none;
+        }
+
+        /* :active applies while button is being clicked */
+        button:active {
+            background-color: orange;
+        }
+
+        /* :nth-child selects a particular child */
+        li:nth-child(2) {
+            background-color: yellow;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+
+        li {
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo-Classes Demonstration</h1>
+
+    <main class="container">
+
+        <section class="example">
+            <h2>:hover</h2>
+            <a href="#">Move Mouse Here</a>
+            <p>Changes style when mouse is over the link.</p>
+        </section>
+
+        <section class="example">
+            <h2>:focus</h2>
+            <input type="text" placeholder="Click here">
+            <p>Changes style when input is focused.</p>
+        </section>
+
+        <section class="example">
+            <h2>:active</h2>
+            <button>Click Me</button>
+            <p>Changes style while the button is clicked.</p>
+        </section>
+
+        <section class="example">
+            <h2>:nth-child()</h2>
+            <ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ul>
+            <p>Second item has different styling.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
