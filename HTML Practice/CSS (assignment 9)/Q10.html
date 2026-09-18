@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        .dashboard {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 70px 1fr;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            background-color: #222;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #333;
+            color: white;
+            padding: 25px;
+        }
+
+        aside a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 0;
+        }
+
+        aside a:hover {
+            color: #3498db;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px gray;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+            animation: load 0.8s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px gray;
+        }
+
+        @keyframes load {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 750px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr;
+            }
+
+            header {
+                grid-column: 1;
+            }
+
+            aside {
+                order: 2;
+            }
+
+            main {
+                order: 3;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header>
+            <h1>Responsive Dashboard</h1>
+        </header>
+
+        <aside>
+            <h2>Menu</h2>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Filters</a>
+            <a href="#">Typography</a>
+            <a href="#">Media Queries</a>
+            <a href="#">Cheat Sheet</a>
+        </aside>
+
+        <main>
+
+            <h2>CSS Topics</h2>
+
+            <section class="cards">
+
+                <article class="card">
+                    <h2>Filters</h2>
+                    <p>
+                        CSS filters change the visual appearance
+                        of elements.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Typography</h2>
+                    <p>
+                        Responsive typography adjusts text according
+                        to screen size.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Media Queries</h2>
+                    <p>
+                        Media queries apply different styles at
+                        different screen widths.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Cheat Sheet Links</h2>
+                    <p>
+                        Useful CSS concepts can be organized in a
+                        simple cheat sheet.
+                    </p>
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

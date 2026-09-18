@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive CSS Cheat Sheet</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .sheet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px gray;
+            transition: transform 0.3s ease,
+                        background-color 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            background-color: #dff0ff;
+        }
+
+        code {
+            display: block;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 900px) {
+            .sheet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .sheet {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Responsive CSS Cheat Sheet</h1>
+    </header>
+
+    <main class="sheet">
+
+        <article class="box">
+            <h2>Filters</h2>
+            <p>CSS filters change the appearance of elements.</p>
+            <code>filter: grayscale(100%);</code>
+        </article>
+
+        <article class="box">
+            <h2>Media Queries</h2>
+            <p>Media queries apply styles according to screen size.</p>
+            <code>@media (max-width: 700px)</code>
+        </article>
+
+        <article class="box">
+            <h2>Responsive Design</h2>
+            <p>Responsive design makes websites work on different devices.</p>
+            <code>width: 100%;</code>
+        </article>
+
+        <article class="box">
+            <h2>Typography</h2>
+            <p>Responsive text can adjust according to screen size.</p>
+            <code>font-size: clamp(1rem, 2vw, 2rem);</code>
+        </article>
+
+    </main>
+
+</body>
+</html>

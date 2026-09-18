@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Cards with Animation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 280px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 5px 15px gray;
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .gray img {
+            filter: grayscale(100%);
+        }
+
+        .sepia img {
+            filter: sepia(100%);
+        }
+
+        .dark img {
+            filter: brightness(60%);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px gray;
+        }
+
+        .card:hover img {
+            filter: none;
+        }
+
+        .card h2,
+        .card p {
+            padding: 0 15px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Profile Cards</h1>
+    </header>
+
+    <main class="cards">
+
+        <article class="card gray">
+            <img src="person1.jpg" alt="Person One">
+            <h2>Rahul</h2>
+            <p>Web Developer</p>
+        </article>
+
+        <article class="card sepia">
+            <img src="person2.jpg" alt="Person Two">
+            <h2>Ankit</h2>
+            <p>UI Designer</p>
+        </article>
+
+        <article class="card dark">
+            <img src="person3.jpg" alt="Person Three">
+            <h2>Aman</h2>
+            <p>Software Developer</p>
+        </article>
+
+    </main>
+
+</body>
+</html>

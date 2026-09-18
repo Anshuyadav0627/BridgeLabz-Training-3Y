@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Design Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 25px;
+        }
+
+        .features {
+            display: flex;
+            gap: 25px;
+        }
+
+        .box {
+            flex: 1;
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 12px gray;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 750px) {
+            .features {
+                flex-direction: column;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Website</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="features">
+
+            <article class="box">
+                <h2>Web Design</h2>
+                <p>Creating clean and attractive websites.</p>
+            </article>
+
+            <article class="box">
+                <h2>Development</h2>
+                <p>Building useful and responsive websites.</p>
+            </article>
+
+            <article class="box">
+                <h2>Security</h2>
+                <p>Keeping websites safe and secure.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+</html>

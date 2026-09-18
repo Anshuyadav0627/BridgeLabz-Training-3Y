@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Cards</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px gray;
+            transition: background-color 0.3s ease;
+        }
+
+        .card:hover {
+            background-color: #d6eaf8;
+        }
+
+        @media (max-width: 900px) {
+            .cards {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                flex: 0 0 calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Cards</h1>
+
+    <main class="cards">
+
+        <article class="card">
+            <h2>HTML</h2>
+            <p>Structure of a webpage.</p>
+        </article>
+
+        <article class="card">
+            <h2>CSS</h2>
+            <p>Styles and designs webpages.</p>
+        </article>
+
+        <article class="card">
+            <h2>Java</h2>
+            <p>A popular programming language.</p>
+        </article>
+
+        <article class="card">
+            <h2>Python</h2>
+            <p>Simple and powerful programming language.</p>
+        </article>
+
+    </main>
+
+</body>
+</html>
