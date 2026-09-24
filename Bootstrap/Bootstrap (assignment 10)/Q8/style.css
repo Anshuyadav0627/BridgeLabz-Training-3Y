@@ -1,0 +1,9 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.pricing-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pricing-card:hover {
+  transform: translateY(-6px);
+}

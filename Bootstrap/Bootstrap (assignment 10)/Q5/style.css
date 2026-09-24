@@ -1,0 +1,30 @@
+/* Override Bootstrap theme variables for a custom look */
+:root {
+  --bs-primary: #2f6f4f;
+  --bs-font-sans-serif: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, .card-title {
+  font-family: "Merriweather", serif;
+}
+
+header {
+  background-color: #eef5f0;
+}
+
+footer {
+  background-color: #2f6f4f;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: #244f39;
+  border-color: #244f39;
+}

@@ -1,0 +1,8 @@
+/* Custom styles layered on top of Bootstrap */
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}

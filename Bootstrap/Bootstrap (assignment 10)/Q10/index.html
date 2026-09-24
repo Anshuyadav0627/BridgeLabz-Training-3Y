@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderlust Travel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bg-dark text-light text-center py-4">
+  <h1>Wanderlust Travel</h1>
+  <p class="lead text-light">Your next adventure starts here</p>
+</header>
+
+<main class="container my-5">
+
+  <!-- Carousel with 3 slides, custom interval -->
+  <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://placehold.co/900x400" class="d-block w-100" alt="Santorini, Greece">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Santorini, Greece</h5>
+          <p>Whitewashed cliffs and endless sunsets.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/900x400" class="d-block w-100" alt="Kyoto, Japan">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kyoto, Japan</h5>
+          <p>Ancient temples and quiet bamboo forests.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/900x400" class="d-block w-100" alt="Banff, Canada">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Banff, Canada</h5>
+          <p>Turquoise lakes framed by the Rockies.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="mt-5">
+    <h5>Booking Completion</h5>
+    <div class="progress" style="height: 25px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+           role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+        70%
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="bg-dark text-light text-center py-4 mt-5">
+  <p class="mb-1">&copy; 2026 Wanderlust Travel</p>
+  <p class="mb-0">Contact us: hello@wanderlusttravel.example | +1 555-0134</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
